@@ -81,10 +81,8 @@ public class InterfazAlquilerCoches extends JFrame {
         panel.setLayout(new GridLayout(4, 1));
 
         btnIniciarCliente = new JButton("Iniciar sesión como cliente");
-        btnIniciarCliente.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                iniciarSesionCliente();
-            }
+        btnIniciarCliente.addActionListener(e -> iniciarSesionCliente());
+
         });
         panel.add(btnIniciarCliente);
 
